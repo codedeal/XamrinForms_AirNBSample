@@ -1,0 +1,9 @@
+/Users/audiology/demo/Projects/Plural/AirNB/AirNB/bin/Debug/netstandard2.0/AirNB.deps.json
+/Users/audiology/demo/Projects/Plural/AirNB/AirNB/bin/Debug/netstandard2.0/AirNB.dll
+/Users/audiology/demo/Projects/Plural/AirNB/AirNB/bin/Debug/netstandard2.0/AirNB.pdb
+/Users/audiology/demo/Projects/Plural/AirNB/AirNB/obj/Debug/netstandard2.0/AirNB.csprojAssemblyReference.cache
+/Users/audiology/demo/Projects/Plural/AirNB/AirNB/obj/Debug/netstandard2.0/AirNB.csproj.CoreCompileInputs.cache
+/Users/audiology/demo/Projects/Plural/AirNB/AirNB/obj/Debug/netstandard2.0/AirNB.AssemblyInfoInputs.cache
+/Users/audiology/demo/Projects/Plural/AirNB/AirNB/obj/Debug/netstandard2.0/AirNB.AssemblyInfo.cs
+/Users/audiology/demo/Projects/Plural/AirNB/AirNB/obj/Debug/netstandard2.0/AirNB.dll
+/Users/audiology/demo/Projects/Plural/AirNB/AirNB/obj/Debug/netstandard2.0/AirNB.pdb

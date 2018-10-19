@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="AirNB.PaymentPage">
+    <TableView HasUnevenRows="true" >
+        <TableRoot>
+            <TableSection>
+            <ViewCell>
+                    <StackLayout>
+                     <StackLayout Orientation="Horizontal" VerticalOptions="Center" Padding="13,5">
+                     <Label Text="Booking Confirmed :" TextColor="#f6546a" VerticalOptions="Center"/>
+                      <Label Text="{Binding Properties.Name}" TextColor="#787fff" HorizontalOptions="EndAndExpand"/>
+       
+                        </StackLayout>
+                    <StackLayout Orientation="Horizontal" VerticalOptions="Center" Padding="13,5">
+                         <Label Text="Period :" TextColor="#f6546a" VerticalOptions="Center"/>
+                        <Label Text="{Binding Period}" TextColor="#787fff" HorizontalOptions="EndAndExpand"/>  
+                    </StackLayout>
+                        </StackLayout>
+                </ViewCell>
+                </TableSection>
+            <TableSection Title="Make Payment">
+                <ViewCell>
+                    <StackLayout  VerticalOptions="Center" Padding="13,5">
+                        <Entry Placeholder="Card Number ...." PlaceholderColor="#fa8072" />
+                        <Entry Placeholder="CVV" PlaceholderColor="#fa8072" IsPassword="true"/>
+                        <Entry Placeholder="Name On Card" PlaceholderColor="#fa8072"/>
+                        <Button Text="Proceed" BackgroundColor="Red" TextColor="White" Clicked="PaymentClicked"/>
+                    </StackLayout>
+                    </ViewCell>
+                       <!-- <EntryCell Label="Card Number" Placeholder="...." Keyboard="Numeric" I/>
+                        <EntryCell Label="CVV" Placeholder="...."  Keyboard="Numeric"/>
+                        <EntryCell Label="Name on Card" Placeholder="...." />-->
+                   
+                
+                </TableSection>
+            </TableRoot>
+    </TableView>
+       
+     
+
+</ContentPage>

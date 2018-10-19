@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AirNB.BrandPage"
+    BackgroundImage="house.jpg">
+
+ <ContentPage.Content>
+   <ScrollView>
+    
+  
+   <StackLayout Spacing="20" VerticalOptions="Center">
+        <Button Text="Login"
+                BorderColor="Transparent"
+                TextColor="White"
+                 FontSize="20"
+                BackgroundColor="Transparent"
+                FontAttributes="Bold"
+                Clicked="LoginClicked"
+                >
+  
+</Button>
+                    
+            
+        
+        <Button Text="Register"
+                
+               BorderColor="Transparent"
+                BackgroundColor="Transparent"
+                TextColor="White"
+                 FontSize="20"
+                FontAttributes="Bold"
+                Clicked="RegisterClicked"
+                >
+                    
+                    </Button>
+    </StackLayout>
+            </ScrollView>
+       </ContentPage.Content>
+</ContentPage>

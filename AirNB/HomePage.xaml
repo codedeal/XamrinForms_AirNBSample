@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    Title="Home"
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="AirNB.HomePage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Logout" Clicked="LogOutClicked"/>
+    </ContentPage.ToolbarItems>
+        <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" 
+            iOS="0, 0, 0, 0" />
+    </ContentPage.Padding>
+    <StackLayout>
+        <SearchBar Placeholder="Search..." PlaceholderColor="#B98C87" TextColor="#f6546a" TextChanged="Handle_TextChanged">
+            
+        </SearchBar>
+        <ListView x:Name="locationList"
+              ItemSelected="PropertySelected"
+             IsGroupingEnabled="true"   
+            GroupDisplayBinding="{Binding Title}"
+                  SeparatorVisibility="Default"
+                  RowHeight="50">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                 
+                      
+                   <ImageCell Text="{Binding Name}" Detail="{Binding Location}" DetailColor="#91B9E5" 
+                              ImageSource="{Binding ImageUrl}" >
+                        <ImageCell.ContextActions>
+                            <MenuItem
+                                Text="Delete"
+                                IsDestructive="true"
+                                CommandParameter="{Binding .}"
+                                Clicked="Delete_Clicked"
+                            />
+                        </ImageCell.ContextActions>
+                    </ImageCell>
+                   
+                         
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+  </StackLayout>
+</ContentPage>

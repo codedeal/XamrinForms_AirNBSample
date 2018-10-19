@@ -1,0 +1,2 @@
+/Users/audiology/demo/Projects/Plural/AirNB/AirNB.Android/obj/Debug/AirNB.Android.csprojAssemblyReference.cache
+/Users/audiology/demo/Projects/Plural/AirNB/AirNB.Android/obj/Debug/res.flag
